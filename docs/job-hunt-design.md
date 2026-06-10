@@ -12,7 +12,7 @@ Research-driven design for the `job-*` skills (June 2026). Sources: ATS/CV evide
 6. **Negotiation: always counter** (~94% of negotiated offers stand; +12-19% average lift); leverage is built from logged eagerness signals and synchronized offer windows, not courage in the moment. → Negotiation skill compiles evidence collected throughout the process.
 7. **Baseline agent testing showed**: with crisp criteria in context, agents evaluate rigorously; without them, nothing forces consistency or persistence. The skills' core job is *making the criteria and evidence exist in the vault* and writing every judgment back as comparable, queryable notes.
 
-## The skill set (10)
+## The skill set (11)
 
 | Skill | Job |
 |---|---|
@@ -23,6 +23,7 @@ Research-driven design for the `job-*` skills (June 2026). Sources: ATS/CV evide
 | `job-evidence-mining` | Build the evidence locker: mine the vault for quantified wins with provenance; comp intelligence file. |
 | `job-cv-tailoring` | ATS-reality CV: parse-clean format, honest JD mirroring, evidence-locker bullets only, version registry. |
 | `job-cover-letters` | Short, specific, slop-proof letters that carry the "why this/why me" the CV can't. |
+| `job-outreach` | Referrals, warm intros, recruiter/HM messages, candidate dossier, dormant-connection sweeps, follow-up cadence. |
 | `job-interview-prep` | STAR bank, question heatmap, interviewer film study, collection plan, debrief protocol feeding the leverage journal. |
 | `job-negotiation` | Leverage memo from logged signals, comp file, always-counter, offer-window synchronization, reference choreography. |
 | `job-hunt-review` | Weekly: funnel base rates, stale-deal sweep, rejection autopsy (48h quarantine, ACH at 4+), desperation-creep detector, positioning-drift diff. Designed to run scheduled. |

@@ -1,7 +1,7 @@
 {
   "name": "commonplace",
-  "description": "Work a Commonplace vault well: recall knowledge before starting, record what you learn, capture sources, and keep the knowledge graph healthy. Pairs with the Commonplace desktop app's MCP server.",
-  "version": "1.0.0",
+  "description": "Vault skills (recall, remember, capture, gardening) plus a complete research-backed job-hunt suite: scouting, evaluation, company diligence, evidence mining, CVs, cover letters, outreach, interview prep, negotiation, weekly review.",
+  "version": "1.1.0",
   "author": {
     "name": "Dave Orrock",
     "url": "https://github.com/DaveOrrock"
