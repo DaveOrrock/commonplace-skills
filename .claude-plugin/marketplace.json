@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Skills for working with a Commonplace vault \u2014 a local-first, AI-native markdown knowledge base",
-    "version": "1.1.0"
+    "version": "1.1.1"
   },
   "plugins": [
     {

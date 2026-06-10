@@ -58,7 +58,18 @@ channel: cold | referral | sourced | outreach
 
 ## Dashboards
 
-Maintain a HQ note the user glances at daily, built from `aidocs-query` blocks (live tables): active pipeline (`where: [{key: status, op: neq, value: closed}]`, columns incl. `next_action`, sorted by `next_action_date`), this week's deadlines, offers in flight, funnel counts by status. Add a closed-roles table with `closed_reason` — the review skill reads it.
+Maintain a HQ note the user glances at daily, built from `aidocs-query` blocks. The centerpiece is a **kanban board** of the live pipeline (Commonplace ≥ 0.3.3) — the user can drag a role between columns and the `status` property updates on the note, so hand-moves and tool-moves stay one system (a hand-drag skips the dated `[status]` observation; the review skill backfills any it finds missing):
+
+```yaml
+title: Pipeline
+view: board
+groupBy: status
+columnOrder: [spotted, triaged, evaluated, applying, applied, screening, interviewing, offer]
+columns: [fit_score, next_action]
+where: [{key: status, op: neq, value: closed}]
+```
+
+Add beside it: a deadlines-this-week table, offers in flight, and a closed-roles table with `closed_reason` — the review skill reads that one.
 
 ## Automation cadence
 
