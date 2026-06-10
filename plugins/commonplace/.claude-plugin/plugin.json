@@ -1,0 +1,20 @@
+{
+  "name": "commonplace",
+  "description": "Work a Commonplace vault well: recall knowledge before starting, record what you learn, capture sources, and keep the knowledge graph healthy. Pairs with the Commonplace desktop app's MCP server.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dave Orrock",
+    "url": "https://github.com/DaveOrrock"
+  },
+  "homepage": "https://github.com/DaveOrrock/commonplace-skills",
+  "repository": "https://github.com/DaveOrrock/commonplace-skills",
+  "license": "MIT",
+  "keywords": [
+    "notes",
+    "knowledge-base",
+    "markdown",
+    "pkm",
+    "memory",
+    "local-first"
+  ]
+}

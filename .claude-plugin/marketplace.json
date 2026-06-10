@@ -1,0 +1,26 @@
+{
+  "name": "commonplace",
+  "owner": {
+    "name": "Dave Orrock",
+    "url": "https://github.com/DaveOrrock"
+  },
+  "metadata": {
+    "description": "Skills for working with a Commonplace vault — a local-first, AI-native markdown knowledge base",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "commonplace",
+      "source": "./plugins/commonplace",
+      "description": "Teaches agents to recall, remember, capture, and garden a Commonplace vault through its MCP tools",
+      "author": {
+        "name": "Dave Orrock"
+      },
+      "homepage": "https://github.com/DaveOrrock/commonplace-skills",
+      "repository": "https://github.com/DaveOrrock/commonplace-skills",
+      "license": "MIT",
+      "keywords": ["notes", "knowledge-base", "markdown", "pkm", "memory", "local-first"],
+      "category": "productivity"
+    }
+  ]
+}
