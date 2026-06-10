@@ -1,6 +1,6 @@
 ---
 name: job-hunt-review
-description: Use for the weekly job-search review, after any rejection, when the search feels stuck or the user is demoralized, when deciding what to focus on next week, or as a scheduled maintenance run over the pipeline.
+description: Use for the weekly job-search review, after any rejection, when rejections are piling up and the pattern across them needs analysis, when the user is demoralized, when deciding what to focus on next week, or as a scheduled maintenance run over the pipeline.
 ---
 
 # Job hunt review
@@ -11,10 +11,10 @@ The review keeps a months-long search honest: it replaces vibes with the user's 
 
 ## Weekly run
 
-1. **Funnel math (the personal base-rate console).** From role-note properties, compute: applications sent, response/screen/onsite/offer conversions, median days-in-stage — this week and cumulative. Contextualize against external base rates (≈3% of applicants interviewed; senior candidates convert better; 20-30 targeted applications with zero interviews = materials/targeting problem, not noise). Write the table to the report; the dashboards stay live, the report is the interpretation.
-2. **Stale-deal sweep.** Every open role with no new observation in 10+ days: draft the next action (follow-up message, chase, prep) or force an explicit close (`closed_reason: ghosted` etc.) with one line of reason. No zombie pipeline flattering the dashboard. Follow-ups 7-10 days after applying put the user in a tiny minority — drafting them is cheap.
+1. **Funnel math (the personal base-rate console).** From role-note properties and the dated `- [status] …` observations (the transition log — `status` alone has no history), compute: applications sent, response/screen/onsite/offer conversions, median days-in-stage — this week and cumulative. Contextualize against external base rates (≈3% of applicants interviewed; senior candidates convert better; 20-30 targeted applications with zero interviews = materials/targeting problem, not noise). Write the table to the report; the dashboards stay live, the report is the interpretation.
+2. **Stale-deal sweep.** Every open role with no new observation in 10+ days: draft the next action and **write it to the role's `next_action`/`next_action_date` properties** (that's what the HQ dashboard sorts on), or force an explicit close (`closed_reason: ghosted` etc.) with one line of reason. No zombie pipeline flattering the dashboard. Follow-ups 7-10 days after applying put the user in a tiny minority — drafting them is cheap.
 3. **Desperation-creep detector.** Trend `fit_score` and salary band of *pursued* roles over the search. Quality trending down while volume trends up = tilt. Flag it with the numbers and quote the user's own week-1 `{{profile}}` criteria back to them before the next application proceeds.
-4. **Positioning-drift diff.** Monthly: diff `{{profile}}`'s history (note history / git). Distinguish dated, deliberate edits ("learned the market") from silent erosion — present the month-1 sentences against today's. Drift without a dated decision gets surfaced, not judged.
+4. **Positioning-drift diff.** Monthly: compare today's criteria against their earlier versions. job-evaluation dates every criteria edit in `{{profile}}`, so the note itself carries the history (use `note_history`/git where available as backup). Scope the diff to the criteria section — the candidate dossier lives elsewhere precisely so its routine edits don't read as drift. Present the month-1 sentences against today's; drift without a dated decision gets surfaced, not judged.
 5. **Assumptions check (monthly).** The search rests on load-bearing assumptions ("my title transfers", "remote roles exist at my level", "Q3 picks up"). Rate each confirmed/unconfirmed/refuted from accumulated evidence; name which single wrong assumption would invalidate the most pipeline.
 6. **Next week's focus.** From all the above: 3 concrete actions, max. Tie each to a specific role or gap. Log the report with `log_entry`.
 

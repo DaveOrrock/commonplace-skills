@@ -28,6 +28,14 @@ Claude Desktop users: install the one-click `.mcpb` extension from the [latest a
 | **vault-capture** | Bringing external material in (webpages, research, sources) | `clip_webpage` with provenance, distilling captures into linked observations, templates for recurring shapes |
 | **vault-gardening** | Asked to tidy, audit, or reorganize the vault | `vault_health`-driven worklists, link-safe renames, duplicate-merge protocol, verify-and-report discipline |
 
+## The job-hunt suite
+
+Eleven research-backed skills that run a complete job search on the vault — built from evidence on what actually works in 2025-26 hiring (ATS reality, recruiter behavior, decision science; see [docs/job-hunt-design.md](docs/job-hunt-design.md)):
+
+`job-hunt-hq` (data model + dashboards + automation cadence) · `job-scouting` (market map, ghost-job triage, capture) · `job-evaluation` (criteria-gated brutal fit scoring) · `job-company-research` (VC-style diligence with kill criteria) · `job-evidence-mining` (provenance-backed accomplishment locker) · `job-cv-tailoring` (parse-clean, honest, evidence-only CVs) · `job-cover-letters` (short, specific, slop-proof) · `job-outreach` (referrals, dossier, dormant-connection sweeps) · `job-interview-prep` (STAR bank, question heatmap, debrief protocol) · `job-negotiation` (leverage memo, offer-window sync) · `job-hunt-review` (weekly funnel math, rejection autopsies, drift detection — runs scheduled).
+
+Vault locations are `{{placeholders}}` resolved from your vault's `AGENTS.md` — restructure freely.
+
 ## Agent manual
 
 [docs/agents.md](docs/agents.md) is the full reference: the contract, markdown conventions (frontmatter, observations, typed relations, journal, live dashboards), the grouped tool catalog, context-economy rules, and a starter `AGENTS.md` to drop in your vault root.

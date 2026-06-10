@@ -13,7 +13,7 @@ Two modes: **hunting** (proactive search against the market map) and **capture**
 
 Maintain `{{companies}}` as a tiered universe (A: would drop everything; B: strong; C: opportunistic) built from the user's `{{profile}}`. When hunting, search where the map points — company careers pages first, then boards. Every captured role should cite which map slot it fills; if a role's company isn't on the map, that's a prompt to research it or question why you're looking at it.
 
-Web-search patterns that work: `site:` queries on target careers pages and the major ATS domains (`boards.greenhouse.io`, `jobs.lever.co`, `jobs.ashbyhq.com`, `apply.workable.com`) with title keywords — postings there are usually real and fresher than aggregator copies.
+Hunting requires the host's web-search capability; without it, ask the user for URLs and work in capture mode. Web-search patterns that work: `site:` queries on target careers pages and the major ATS domains (`boards.greenhouse.io`, `jobs.lever.co`, `jobs.ashbyhq.com`, `apply.workable.com`) with title keywords — postings there are usually real and fresher than aggregator copies.
 
 ## Ghost-job triage (before any effort)
 
@@ -23,7 +23,7 @@ Web-search patterns that work: `site:` queries on target careers pages and the m
 3. **Careers-page presence** — not on the company's own site = treat as unverified.
 4. **Evergreen shape** — vague description, no named team/manager, identical posting across many cities.
 
-Record the verdict as an observation on the role note: `- [triage] posted 6d, on careers page, named team #real`. Suspect roles get `status: triaged` with a `- [risk] likely ghost: …` observation — visible, not deleted.
+Record the verdict as an observation on the role note: `- [triage] posted 6d, on careers page, named team #real`. Passing roles move `spotted → triaged` (with the dated `- [status] …` observation); suspect roles **stay `spotted`** with a `- [risk] likely ghost: …` observation — visible on the dashboard as unverified, not mixed in with the real pipeline.
 
 ## Capture
 
@@ -33,7 +33,7 @@ Use `clip_webpage` on the posting URL (it dedupes by URL and stamps `source`/`cl
 
 ## Signals watchtower (scheduled)
 
-On daily/periodic runs, sweep A/B-tier company notes: clip careers-page deltas and news, append delta-observations (`- [signal] 3 new senior eng postings this week`, `- [signal] CFO departed`). A momentum spike (funding + exec departure + cluster of adjacent postings) can mean an unposted leadership role — flag it as an outreach opportunity rather than waiting for the posting.
+On daily/periodic runs, sweep A/B-tier company notes: clip careers-page deltas and news, append delta-observations (`- [hiring-signal] 3 new senior eng postings this week`, `- [hiring-signal] CFO departed`) — the category is distinct from interview-debrief `[eagerness]` signals so aggregations never mix them. A momentum spike (funding + exec departure + cluster of adjacent postings) can mean an unposted leadership role — flag it as an outreach opportunity rather than waiting for the posting.
 
 ## Don'ts
 

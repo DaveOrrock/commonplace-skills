@@ -34,7 +34,7 @@ Track coverage: every claimed skill in `{{profile}}` should have ≥1 `[skill-pr
 
 ## Comp intelligence (same discipline, different asset)
 
-`{{comp-file}}` accumulates every compensation data point as it's encountered — recruiter bands ("recruiter said £130-150 for this level"), posted ranges, levels.fyi clips, offer numbers — each as `- [comp] £X-Y, <role family>, <stage/size>, <source> (date)`. Before any salary conversation, job-negotiation reads this file; the user never anchors blind. Capture is *passive and constant*: whenever a number appears in any job-hunt conversation, file it.
+`{{comp-file}}` accumulates every compensation data point as it's encountered — recruiter bands ("recruiter said £130-150 for this level"), posted ranges, levels.fyi clips, offer numbers — each as `- [comp] £X-Y, <role family>, <stage/size>, <source> (date)`. Before any salary conversation, job-negotiation reads this file; the user never anchors blind. The capture rule itself lives in job-hunt-hq's session pattern (file every number, from any session, immediately); this skill defines the format and owns the periodic consolidation.
 
 ## Don'ts
 

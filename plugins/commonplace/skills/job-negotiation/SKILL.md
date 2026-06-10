@@ -7,12 +7,12 @@ description: Use when an offer arrives or is imminent, when a recruiter asks for
 
 **REQUIRED BACKGROUND:** job-hunt-hq, job-evidence-mining (`{{comp-file}}`).
 
-Negotiation is won by evidence collected before the offer exists. The base rates: countering lifts offers ~12-19% on average, ~94% of negotiated offers stand, and most candidates still don't counter. **Default = always counter, calmly, once, with evidence.**
+Negotiation is won by evidence collected before the offer exists. The base rates: countering lifts offers ~12-19% on average, ~94% of negotiated offers stand, and most candidates still don't counter. **Default = always counter, calmly, once, with evidence.** Two carve-outs: genuinely fixed bands (public sector, union scales — verify, don't assume) and an offer already at/above the top of the comp file's justified range, where the counter shifts to non-salary terms or nothing.
 
 ## The leverage memo (compile before any number is spoken)
 
 From accumulated vault data, write into the role note:
-1. **Their eagerness** — quoted, dated `[signal]` observations from interview debriefs: shrinking reply latency, execs added late, "when could you start", accelerated rounds. This is how much they want the user, in their own behavior.
+1. **Their eagerness** — quoted, dated `[eagerness]` observations from interview debriefs: shrinking reply latency, execs added late, "when could you start", accelerated rounds. This is how much they want the user, in their own behavior.
 2. **Market position** — `{{comp-file}}` distribution for this role family/stage; where their band sits in it.
 3. **BATNA state** — other live processes and their projected offer dates (below).
 4. **Their promises** — every `[promise]` observation logged during evaluation/interviews ("2 days office after probation", "hands-on drops as you hire"). **The counter converts promises into contract terms** — this is the most natural, least adversarial ask there is: "you mentioned X; let's reflect it in the offer."
@@ -33,7 +33,7 @@ One counter, specific, evidence-framed: number (or top-2 priorities: base + one 
 
 ## Acceptance diligence
 
-Before signing: company memo's kill criteria re-checked and current; references choreographed — referees briefed on the live offer, talking points drafted, and their story consistent with what interviews heard (back-channels happen); start date leaves real rest; resignation plan written.
+Before signing: company memo's kill criteria re-checked and current; references prepared — referees told about the live offer and reminded which projects and qualities are most relevant to it (their account stays their own: consistency comes from truth, and back-channels happen); start date leaves real rest; resignation plan written. **On acceptance:** set the role `closed` / `closed_reason: accepted` (+ dated `- [status]` observation) — and close every other live process with `closed_reason: withdrawn`, drafting brief, warm withdrawal notes; recruiters remember candidates who close loops, and the pipeline must end the search empty, not abandoned.
 
 ## Don'ts
 

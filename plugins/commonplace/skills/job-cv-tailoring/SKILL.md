@@ -33,6 +33,7 @@ Modern ATSs parse, store, and route applications; they do not auto-reject on for
 3. Honesty pass: every number sourced, every skill provable in an interview.
 4. Save as a note in `{{applications}}`, named with role + date. **Register the submission** on the role note: `- submitted [[CV — Acme Head of Eng 2026-06]]` with channel — narrative consistency across versions gets audited before interviews, and you never wonder which CV they're holding.
 5. `export_pdf` for the send-ready file.
+6. **When the application is actually submitted:** set `status: applied`, the `applied` date, the dated `- [status] applied (…)` observation, and `channel` on the role note. The review skill's funnel math runs on these — an unrecorded submission is invisible to every later metric.
 
 ## Don'ts
 

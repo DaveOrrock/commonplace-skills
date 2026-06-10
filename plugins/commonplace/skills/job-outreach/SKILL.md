@@ -11,7 +11,7 @@ The channel math is brutal and underused: referred candidates convert to intervi
 
 ## The candidate dossier (build once, reuse everywhere)
 
-Headhunters pitch candidates in third person; candidates never write that artifact for themselves. Maintain one in `{{profile}}`: a half-page, third-person submission brief — positioning line, three locker-backed proof points, comp band, availability, links. Two uses: (a) forwardable copy for anyone offering a referral, so champions pitch accurately instead of vaguely; (b) the source paragraph for every outreach message, keeping the story consistent.
+Headhunters pitch candidates in third person; candidates never write that artifact for themselves. Maintain one as its own note, `{{dossier}}`: a half-page, third-person submission brief — positioning line, three locker-backed proof points, comp band, availability, links. Two uses: (a) forwardable copy for anyone offering a referral, so champions pitch accurately instead of vaguely; (b) the source paragraph for every outreach message, keeping the story consistent.
 
 ## Dormant-connection sweep (the vault knows people you forgot)
 

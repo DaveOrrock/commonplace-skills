@@ -1,6 +1,6 @@
 ---
 name: job-company-research
-description: Use when researching a company the user might work for — before an interview loop, before accepting an offer, when a company joins the target map, or when the user asks "what do we know about X?" in a job-hunt context.
+description: Use when researching a company as a potential employer — diligence before an interview loop or offer, when a company joins the target map, or when the user asks "what do we know about company X?". (For scoring a specific role/posting against the user's criteria, use job-evaluation.)
 ---
 
 # Company research
@@ -27,7 +27,7 @@ Write/extend the company note in `{{companies}}`: a `## Diligence` section plus 
 
 ## Where to look
 
-Careers page + ATS board (real openings, growth shape), Companies House / annual filings (UK), Crunchbase/news for funding, layoffs.fyi, LinkedIn (headcount trend, churn, the panel), Glassdoor (protocol above), the product itself (sign up, use it), engineering blog/GitHub (real stack vs claimed). Clip the load-bearing sources into the vault (`clip_webpage`) so claims keep provenance.
+Careers page + ATS board (real openings, growth shape), Companies House / annual filings (UK), Crunchbase/news for funding, layoffs.fyi, LinkedIn (headcount trend, churn, the panel), Glassdoor (protocol above), the product itself (sign up, use it), engineering blog/GitHub (real stack vs claimed). Clip the load-bearing sources into the vault (`clip_webpage`) so claims keep provenance. **Walled sources** (Glassdoor, LinkedIn and similar resist automated fetching): ask the user to paste the relevant pages/screens rather than skipping the protocol, and mark anything you couldn't verify `#unverified` — never fill the gap from general knowledge.
 
 ## Don'ts
 
